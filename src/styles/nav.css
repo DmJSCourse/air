@@ -4,38 +4,54 @@
   background-color: #008aff;
   padding-left: 25%;
 }
+
 .nav__logo {
   position: absolute;
   left: 15%;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 45px;
   height: 25px;
   background-image: url(../images/logo/Air.svg);
   background-repeat: no-repeat;
 }
+
 .nav__logo:hover {
   cursor: pointer;
 }
+
 .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 120px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .nav__item {
   line-height: 120px;
   margin-right: 64px;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 .nav__item--last {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-left: auto;
 }
+
 .nav__item:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 .nav__item:hover:after {
   content: "";
   height: 2px;
@@ -45,6 +61,7 @@
   bottom: 25%;
   left: 0;
 }
+
 .nav__link {
   font-family: "Poppins", serif;
   font-size: 13px;
@@ -57,18 +74,22 @@
   color: #fff;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1280px) {
   .nav__list {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nav__item {
     margin-right: 0;
   }
   .nav__item--last {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin-left: 0;
   }
 }
+
 @media screen and (max-width: 720px) {
   .nav {
     padding-left: 10%;
@@ -82,7 +103,8 @@
     height: 100%;
   }
   .nav__item {
-    flex-shrink: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     height: 100%;
     line-height: 60px;
   }
@@ -91,6 +113,7 @@
     letter-spacing: normal;
   }
 }
+
 @media screen and (max-width: 500px) {
   .nav {
     padding: 0 15px;
@@ -100,15 +123,19 @@
   }
   .nav__list {
     margin-left: 25%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .nav__item {
-    flex: 1 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
     height: 33%;
     position: relative;
   }
   .nav__item:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .nav__item:hover:after {
     bottom: 0%;
@@ -116,11 +143,11 @@
   .nav__link {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .nav__link:before {
     content: "- ";
   }
 }
-
 /*# sourceMappingURL=nav.css.map */

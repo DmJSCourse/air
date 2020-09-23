@@ -18,3 +18,10 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+const contactButton = document.querySelector('.contact__button');
+
+contactButton.addEventListener("click", () => {
+  const message = 'Your message is sent!';
+  contactButton.innerText = message;
+})

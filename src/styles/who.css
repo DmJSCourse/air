@@ -1,7 +1,8 @@
 .who {
   height: 500px;
-  padding: 166.6666666667px 25% 0;
+  padding: 166.66667px 25% 0;
 }
+
 .who__header {
   font-family: "Poppins", serif;
   font-size: 32px;
@@ -11,6 +12,7 @@
   margin-bottom: 16px;
   margin: auto;
 }
+
 .who__text {
   font-size: 24px;
   line-height: 36px;
@@ -19,11 +21,13 @@
   font-weight: 600;
   color: #6c788b;
 }
+
 @media screen and (max-width: 1024px) {
   .who {
-    padding: 71.4285714286px 10%;
+    padding: 71.42857px 10%;
   }
 }
+
 @media screen and (max-width: 500px) {
   .who {
     padding: 5%;
@@ -32,5 +36,4 @@
     margin-bottom: 30px;
   }
 }
-
 /*# sourceMappingURL=who.css.map */

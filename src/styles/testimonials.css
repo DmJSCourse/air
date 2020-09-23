@@ -5,6 +5,7 @@
   padding-right: 228px;
   position: relative;
 }
+
 .testimonials__header-small {
   font-family: "Poppins", serif;
   font-size: 13px;
@@ -13,6 +14,7 @@
   text-transform: uppercase;
   color: #c0cdd7;
 }
+
 .testimonials__header-big {
   color: #253757;
   font-family: "Poppins", serif;
@@ -21,136 +23,196 @@
   line-height: 48px;
   margin: 16px 0 85px;
 }
+
 .testimonials__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .testimonials__card {
   background-color: #fff;
   width: 314px;
   height: 494px;
   border-radius: 24px;
-  box-shadow: 0px 9px 18px rgba(37, 41, 49, 0.03);
+  -webkit-box-shadow: 0px 9px 18px rgba(37, 41, 49, 0.03);
+          box-shadow: 0px 9px 18px rgba(37, 41, 49, 0.03);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 87px 32px 32px;
 }
+
 .testimonials__card:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 .testimonials__card--blue > .testimonials__icon {
   background-image: url(../images/testimonials/1.png);
 }
+
 .testimonials__card--blue > .testimonials__image {
   position: relative;
 }
+
 .testimonials__card--blue > .testimonials__image:before {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #2f80ed;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #2f80ed;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   top: -8%;
   left: -30%;
 }
+
 .testimonials__card--blue > .testimonials__image:after {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #2f80ed;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #2f80ed;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   bottom: -8%;
   right: -30%;
 }
+
 .testimonials__card--yellow > .testimonials__icon {
   background-image: url(../images/testimonials/2.png);
 }
+
 .testimonials__card--yellow > .testimonials__image {
   position: relative;
 }
+
 .testimonials__card--yellow > .testimonials__image:before {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   top: -8%;
   left: -30%;
 }
+
 .testimonials__card--yellow > .testimonials__image:after {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   bottom: -8%;
   right: -30%;
 }
+
 .testimonials__card--red > .testimonials__icon {
   background-image: url(../images/testimonials/3.png);
 }
+
 .testimonials__card--red > .testimonials__image {
   position: relative;
 }
+
 .testimonials__card--red > .testimonials__image:before {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   top: -8%;
   left: -30%;
 }
+
 .testimonials__card--red > .testimonials__image:after {
   content: "";
   width: 140px;
   height: 56px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
   border-radius: 500px;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   position: absolute;
   bottom: -8%;
   right: -30%;
 }
+
 .testimonials__image {
   margin-bottom: 82px;
+  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
 }
+
 .testimonials__image:hover {
-  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
+
 .testimonials__image:hover:before, .testimonials__image:hover:after {
-  transform: rotate(360deg);
-  transition-delay: 1s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
+
 .testimonials__photo {
   height: 140px;
   width: 140px;
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .testimonials__icon {
   width: 21px;
   height: 19px;
 }
+
 .testimonials__text {
   font-size: 13px;
   line-height: 19.5px;
@@ -160,6 +222,7 @@
   font-weight: 600;
   text-align: center;
 }
+
 .testimonials__name {
   font-size: 13px;
   line-height: 19.5px;
@@ -168,6 +231,7 @@
   color: #253757;
   font-weight: 600;
 }
+
 .testimonials__company {
   font-family: "Poppins", serif;
   font-size: 13px;
@@ -177,31 +241,42 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
 @media screen and (max-width: 1420px) {
   .testimonials {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .testimonials {
     height: 1793.75px;
   }
   .testimonials__cards {
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .testimonials__card {
     width: 90%;
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     margin-bottom: 50px;
   }
 }
+
 @media screen and (max-width: 720px) {
   .testimonials {
     height: 1947.5px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .testimonials {
     padding: 5%;
@@ -209,13 +284,19 @@
   }
   .testimonials__card {
     width: 100%;
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     margin-bottom: 24px;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     overflow: hidden;
   }
   .testimonials__card:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .testimonials__header-small {
     text-align: center;
@@ -224,5 +305,4 @@
     margin: 24px 0;
   }
 }
-
 /*# sourceMappingURL=testimonials.css.map */
